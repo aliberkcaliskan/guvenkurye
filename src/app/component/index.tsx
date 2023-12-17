@@ -1,0 +1,9 @@
+export { default as WhyUs } from "./WhyUs";
+export { default as AboutSection } from "./about";
+export { default as FeedbackSection } from "./contact";
+export { default as Footer } from "./footer";
+export { default as Header } from "./header";
+export { default as PackageCard } from "./packageCard";
+export { default as ServiceCard } from "./serviceCard";
+export { default as ContactBanner } from "./sss";
+export { default as Banner } from "./banner";
