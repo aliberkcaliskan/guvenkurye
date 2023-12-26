@@ -1,4 +1,4 @@
-export { default as WhyUs } from "./WhyUs";
+export { default as WhyUs } from "./whyUs";
 export { default as AboutSection } from "./about";
 export { default as FeedbackSection } from "./contact";
 export { default as Footer } from "./footer";
