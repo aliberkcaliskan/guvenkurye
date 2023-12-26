@@ -14,7 +14,7 @@ const ContactBanner: React.FC<ContactBannerProps> = ({ title, description, image
         <h1 className="text-3xl lg:text-7xl mb-4 font-bold uppercase italic">
           {title}
         </h1>
-        <p className="text-lg">{description}</p>
+        <p className="lg:text-lg text-sm mb-5">{description}</p>
         <a
           href="#"
           className="inline-block rounded-full border-2 border-white text-lg px-8 py-3 hover:bg-white hover:text-gray-900"

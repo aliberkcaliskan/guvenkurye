@@ -18,8 +18,7 @@ import {
   FeedbackData,
   WhyUsData,
 } from "./interface";
-export default function Home() 
-{
+export default function Home() {
   const bannerData: BannerData = {
     title: "Güvenilir ve Hızlı Kurye Hizmeti",
     description:
@@ -61,11 +60,11 @@ export default function Home()
   const Services: React.FC = () => {
     return (
       <>
-        <div className="mx-auto mt-20 max-w-lg text-center">
-          <h2 className="text-5xl mb-6 font-bold uppercase italic">
+        <div className="mx-auto lg:mt-20 mt-4 max-w-lg text-center">
+          <h2 className="text-2xl lg:text-5xl lg:mb-6 font-bold uppercase italic mb-2">
             Hizmetlerimiz
           </h2>
-          <p className="text-xl">
+          <p className="text-sm lg:text-xl p-4 ">
             Sunduğumuz kurye hizmetleri çeşitli ihtiyaçlara uygun olarak özel
             olarak tasarlanmıştır. Hızlı, güvenilir ve çeşitli taşıma
             seçenekleri ile müşterilerimize en iyi hizmeti sunmayı amaçlıyoruz.
@@ -108,11 +107,11 @@ export default function Home()
   const PackageCards: React.FC = () => {
     return (
       <>
-        <div className="mx-auto max-w-lg text-center pt-24 pb-12">
-          <h2 className="text-5xl mb-6 font-bold uppercase italic">
+        <div className="mx-auto lg:mt-20 mt-10 max-w-lg text-center  mb-2">
+          <h2 className="text-2xl lg:text-5xl mb-3 lg:mb-6 font-bold uppercase italic">
             Paketlerimiz
           </h2>
-          <p className="text-xl">
+          <p className="text-sm lg:text-xl p-4">
             Siz değerli müşterilerimiz, kurye hizmetimizde size özel sunulan üç
             farklı paket arasından seçim yapmak, ihtiyaçlarınıza uygun bir
             teslimat deneyimi yaşamak için önemli bir adımdır.

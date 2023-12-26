@@ -8,9 +8,14 @@ interface AboutSectionProps {
   link: string;
 }
 
-const AboutSection: React.FC<AboutSectionProps> = ({ title, description, image, link }) => {
+const AboutSection: React.FC<AboutSectionProps> = ({
+  title,
+  description,
+  image,
+  link,
+}) => {
   return (
-    <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 py-24">
+    <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 lg:py-24 py-12 ">
       <div className="hidden lg:grid relative grid-cols-2">
         <div className="pt-24">
           <div className="relative w-full h-full">
@@ -35,8 +40,10 @@ const AboutSection: React.FC<AboutSectionProps> = ({ title, description, image, 
       </div>
       <div className="lg:px-32 lg:py-32 flex items-center justify-center">
         <div>
-          <h2 className="text-5xl mb-6 font-bold uppercase italic">{title}</h2>
-          <p className="text-lg">{description}</p>
+          <h2 className="text-2xl lg:text-5xl mb-3 lg:mb-6 font-bold uppercase italic">
+            {title}
+          </h2>
+          <p className="text-sm lg:text-lg">{description}</p>
           <a
             href={link}
             className="mt-8 inline-block rounded-full border-2 border-gray-900 text-lg px-8 py-3 hover:bg-yellow hover:text-white"

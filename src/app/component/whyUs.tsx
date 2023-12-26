@@ -11,13 +11,13 @@ interface WhyUsProps {
 
 const WhyUs: React.FC<WhyUsProps> = ({ data }) => {
   return (
-    <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 py-24">
+    <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 lg:py-24 py-12 pt-0">
       <div className="lg:px-32 lg:py-32 flex items-center justify-center">
         <div>
-          <h2 className="text-5xl mb-6 font-bold uppercase italic">
+          <h2 className="text-2xl lg:text-5xl mb-6 font-bold uppercase italic text-center tablet:text-left">
             {data.title}
           </h2>
-          <p className="text-lg">
+          <p className="sm-text lg:text-lg">
             {data.description.map((paragraph, index) => (
               <React.Fragment key={index}>
                 {paragraph}
