@@ -8,6 +8,7 @@ const Header: React.FC = () => {
       <div className="h-24 z-20 relative container mx-auto flex items-center justify-between px-6">
         <div className=" cursor-pointer flex :items-center justify-center md:justify-normal md:items-start w-full">
           <Image 
+          className="w-[300px]"
             src="/logo.webp"
             alt="logo"
             width={300}
