@@ -9,18 +9,18 @@ const PhoneCall: React.FC<any> = () => {
         href="tel:05315625131"
         className="fixed bottom-4 left-4 animate-bounce"
       >
-        <button className="bg-yellow rounded-full hover:bg-green-500  text-white font-bold p-4">
+        <div className="bg-yellow rounded-full hover:bg-green-500  text-white font-bold p-4">
           <FaPhone className="text-xl	" />
-        </button>
+        </div>
       </a>
       <a
         target="_blank"
         href="https://wa.me/+905315625131"
         className="fixed bottom-4 right-4 animate-bounce"
       >
-        <button className="bg-yellow rounded-full hover:bg-green-500  text-white font-bold p-4 ">
+        <div  className="bg-yellow rounded-full hover:bg-green-500  text-white font-bold p-4 ">
           <FaWhatsapp className="text-xl" />
-        </button>
+        </div>
       </a>
     </>
   );
