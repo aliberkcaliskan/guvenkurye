@@ -6,14 +6,14 @@ const Header: React.FC = () => {
     <header>
       <div className="h-24 w-full absolute top-0 left-0 bg-yellow"></div>
       <div className="h-24 z-20 relative container mx-auto flex items-center justify-between px-6">
-        <h1 className="text-xl font-extrabold italic tracking-tighter text-white uppercase cursor-pointer flex :items-center justify-center md:justify-normal md:items-start w-full">
+        <div className=" cursor-pointer flex :items-center justify-center md:justify-normal md:items-start w-full">
           <Image 
-            src="/logo.png"
+            src="/logo.webp"
             alt="logo"
             width={300}
             height={10000}
           />
-        </h1>
+        </div>
         <div className="text-white text-lg fixed bottom-0 left-0 lg:relative p-6 lg:p-0 w-full lg:w-auto max-w-lg">
           {/* Buraya menü veya başka içerik ekleyebilirsiniz */}
           {/* Örnek menü

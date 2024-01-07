@@ -4,29 +4,27 @@ import {
   FaCar,
   FaMedkit,
   FaMotorcycle,
-  FaPlane,
-  FaWhatsapp,
-  FaPhone,
+  FaPlane
 } from "react-icons/fa";
 import {
-  WhyUs,
   AboutSection,
+  Banner,
+  ContactBanner,
   FeedbackSection,
   Footer,
   Header,
   PackageCard,
   ServiceCard,
-  ContactBanner,
-  Banner,
+  WhyUs,
 } from "./component";
+import PhoneCall from "./component/phoneCall";
 import {
+  AboutData,
   BannerData,
   ContactData,
-  AboutData,
   FeedbackData,
   WhyUsData,
 } from "./interface";
-import PhoneCall from "./component/phoneCall";
 export default function Home() {
   const bannerData: BannerData = {
     title: "Güvenilir ve Hızlı Kurye Hizmeti",
