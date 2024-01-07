@@ -7,14 +7,15 @@ const PhoneCall: React.FC<any> = () => {
     <>
       <a
         href="tel:05315625131"
-        className="fixed bottom-4 left-4 animate-bounce"
+        className="fixed bottom-4 left-4 animate-bounce" aria-label=""
       >
         <div className="bg-yellow rounded-full hover:bg-green-500  text-white font-bold p-4">
-          <FaPhone className="text-xl	" />
+          <FaPhone className="text-xl" />
         </div>
       </a>
       <a
         target="_blank"
+        aria-label=""
         href="https://wa.me/+905315625131"
         className="fixed bottom-4 right-4 animate-bounce"
       >
