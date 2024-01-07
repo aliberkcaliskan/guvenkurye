@@ -1,5 +1,13 @@
 import React from "react";
-import {FaBus, FaCar, FaMedkit, FaMotorcycle, FaPlane} from "react-icons/fa";
+import {
+  FaBus,
+  FaCar,
+  FaMedkit,
+  FaMotorcycle,
+  FaPlane,
+  FaWhatsapp,
+  FaPhone,
+} from "react-icons/fa";
 import {
   WhyUs,
   AboutSection,
@@ -18,6 +26,7 @@ import {
   FeedbackData,
   WhyUsData,
 } from "./interface";
+import PhoneCall from "./component/phoneCall";
 export default function Home() {
   const bannerData: BannerData = {
     title: "Güvenilir ve Hızlı Kurye Hizmeti",
@@ -71,31 +80,33 @@ export default function Home() {
             İşte kapsadığımız hizmet alanlarımız
           </p>
         </div>
-        <div className="m-10">
+        <div className="lg:m-10 m-5">
           <div className="flex flex-wrap justify-center">
             <ServiceCard
-              title="Moto Kurye"
-              description="Hızlı ve çevik moto kuryelerle küçük paketlerinizi en hızlı şekilde teslim edin."
+              title="Motorlu Kurye"
+              description="Acil ve hızlı teslimat gereksinimlerinizi karşılamak amacıyla oluşturulmuş bir servistir. Doküman, paket, yedek parça, hediyeler veya motosikletle taşınabilen herhangi bir ürünü hızlı ve güvenilir bir biçimde taşımayı amaçlar. Bu hizmet, zamanın değerini bilen bireyler ve işletmeler için büyük bir güvenlik sunar."
               icon={<FaMotorcycle className="text-4xl" />}
             />
             <ServiceCard
               title="Arabalı Kurye"
-              description="Geniş araç filomuzla orta ölçekli gönderilerinizi güvenle taşıyoruz."
+              description="Motorsikletle taşınamayacak gönderilerin adresler arasında ulaştırılma teslimat seçeneğidir. Araçlı kurye hizmeti, günümüzde şehir yaşamının hızlı temposu içinde önemli bir gereklilik haline gelmiştir. Bu hizmet, özellikle şehir içindeki teslimatların hızlı ve güvenilir bir biçimde gerçekleştirilmesi için büyük bir öneme sahiptir.'"
               icon={<FaCar className="text-4xl" />}
             />
             <ServiceCard
               title="Uçak Kargo"
-              description="Uçak kargo hizmeti ile uluslararası gönderilerinizi hızlı ve güvenli bir şekilde teslim edin."
+              description="
+              Hava Kargo hizmetimiz, aynı gün içinde aşağıda belirtilen şehirler arasında, bir şehirdeki başlangıç adresinizden alınıp diğer bir şehirdeki hedef adrese teslimat sağlamaktadır.
+          Gönderilen şehirdeki kuryelerimiz, hava kargo paketinizi havalimanından alarak istenilen teslimat adresine ulaştırmaktadır."
               icon={<FaPlane className="text-4xl" />}
             />
             <ServiceCard
               title="Otobüs Kargo"
-              description="Ekonomik ve güvenli otobüs kargo ile büyük paketlerinizi taşıyoruz."
+              description=" İllerdeki OTOGAR KARGO şubeleri vasıtasıyla gerçekleştirilen teslimattır. Motorlu araç kurye, gönderiyi alıp Otogar kargo şubesine ulaştırdığı teslimatı kapsar."
               icon={<FaBus className="text-4xl" />}
             />
             <ServiceCard
               title="Eczane Kargo"
-              description="Eczane ürünlerinizin güvenli ve özenli bir şekilde taşınması için özel çözümler sunuyoruz."
+              description="İlaç ve tıbbi malzemelerin hızlı bir biçimde teslim edilmesini sağlar. Acil reçete sorunlarıyla başa çıkmak veya hastalara hızlı bir erişim sağlamak amacıyla kullanılan bir hizmettir. Nöbetçi eczanelerden ilacınızı alarak size en hızlı ulaşımı sağlayan bu 7/24 hizmet seçeneği, acil durumlar için ideal bir çözümdür."
               icon={<FaMedkit className="text-4xl" />}
             />
           </div>
@@ -119,25 +130,25 @@ export default function Home() {
         </div>
         <div className="flex flex-wrap md:space-x-12 justify-center px-4">
           <PackageCard
-            title="Standart Paket"
-            description="Ekonomik ve hızlı bir çözüm arayanlar için Standart Paket idealdir. İş veya kişisel gönderilerinizi güvenle ve zamanında teslim edin."
-            deliveryTime="1 gün"
-            weightLimit="10"
-            priceRange="100-200 TL"
+            title="Normal Kurye"
+            description="İstanbul il sınırları içindeki iki adres arasındaki teslimat, Bu hizmet, iş saatleri içinde gerçekleşen ve ekonomik açıdan avantajlı bir teslimat seçeneğidir."
+            deliveryTime="180-210 dakika"
+            timeBeetwen="08:00-18:00"
+            // priceRange="100-200 TL"
           />
           <PackageCard
-            title="Orta Paket"
-            description="Esnek teslimat süreleri ve uygun fiyatlarla Orta Paket, orta ölçekli gönderileriniz için mükemmel bir seçenektir. İhtiyaçlarınıza uygun hızlı ve güvenilir bir çözüm."
-            deliveryTime="Yarım gün"
-            weightLimit="20"
-            priceRange="200-400 TL"
+            title="Acil Kurye"
+            description="Belirlediğiniz konumlar arasındaki teslimat, Özellikle hızlı ulaşım gerektiren gönderiler için sıkça tercih edilen bir teslimat seçeneğidir."
+            deliveryTime="90-120 dakika"
+            timeBeetwen="08:00-22:00"
+            // // priceRange="200-400 TL"
           />
           <PackageCard
-            title="Premium Paket"
-            description="Acil teslimat gereksinimleri olanlar için en üst düzey hız ve özel hizmet sunan Premium Paket, iş veya kişisel gönderilerinizi 1-2 saat içerisinde hedefe ulaştırır."
-            deliveryTime="1-2 saat"
-            weightLimit="100"
-            priceRange="500-2000 TL"
+            title="VIP Kurye"
+            description="Adresler arasındaki en hızlı teslimat seçeneğidir. Gönderinizin en kısa sürede alınıp verilmesini sağlamak için tercih edebileceğiniz en hızlı seçenektir."
+            deliveryTime="60 dakika"
+            timeBeetwen="7/24"
+            // priceRange="500-2000 TL"
           />
         </div>
       </>
@@ -156,6 +167,7 @@ export default function Home() {
         <AboutSection {...aboutData} />
         <FeedbackSection {...feedbackData} />
         <Footer />
+        <PhoneCall />
       </main>
     </>
   );

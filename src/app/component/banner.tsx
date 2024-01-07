@@ -13,6 +13,7 @@ const Banner: React.FC<BannerProps> = ({title, description}) => {
           {title}
         </h1>
         <p className="text-sm lg:text-lg lg:w-4/6 w-full">{description}</p>
+        <a className="mt-5 border p-4 px-10 rounded-lg	hover:bg-white hover:text-yellow" href="tel:531 562 51 31">Kurye Çağır</a>
       </div>
     </div>
   );

@@ -14,7 +14,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon }) =
           {icon}
         </div>
         <div className="font-bold lg:text-xl text-sm mb-2 text-center">{title}</div>
-        <p className="text-gray-700  text-sm lg:text-base  text-center">{description}</p>
+        <div className='flex justify-center items-center min-h-[202px]'>
+        <p className="text-gray-700  text-sm lg:text-sm  text-center ">{description}</p>
+        </div>
       </div>
     </div>
   );
