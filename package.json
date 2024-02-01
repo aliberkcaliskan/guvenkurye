@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@firebase/analytics": "^0.10.0",
     "firebase": "^10.7.2",
     "next": "13.5.4",
     "react": "^18",
