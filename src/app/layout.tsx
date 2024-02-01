@@ -5,7 +5,7 @@ import {initializeApp} from "firebase/app";
 import "./globals.css";
 const inter = Inter({subsets: ["latin"]});
 
-const firebaseConfig = {
+const firebaseConfig: any = {
   apiKey: "AIzaSyCCkd7tVIxjbgiCNhgvummWnVJyywoHJEg",
   authDomain: "guven-kurye.firebaseapp.com",
   projectId: "guven-kurye",
@@ -14,7 +14,6 @@ const firebaseConfig = {
   appId: "1:472423439478:web:f09213c4356e8ac8a7d357",
   measurementId: "G-H89WXZQ976",
 };
-// Initialize Firebase
 
 export const metadata: Metadata = {
   title: "Güven Kurye - Hızlı ve Güvenilir Teslimat",
@@ -26,6 +25,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   const app = initializeApp(firebaseConfig);
+
   if (typeof window !== "undefined") {
     console.log("🚀 ~ RootLayout ~ window:", window);
     getAnalytics(app);
