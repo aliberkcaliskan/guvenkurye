@@ -16,11 +16,6 @@ const firebaseConfig = {
 };
 // Initialize Firebase
 
-const app = initializeApp(firebaseConfig);
-if (typeof window !== 'undefined') {
-  getAnalytics(app);
-
-}
 export const metadata: Metadata = {
   title: "Güven Kurye - Hızlı ve Güvenilir Teslimat",
   description:
@@ -30,6 +25,12 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
+  const app = initializeApp(firebaseConfig);
+  if (typeof window !== "undefined") {
+    console.log("🚀 ~ RootLayout ~ window:", window);
+    getAnalytics(app);
+  }
+
   return (
     <html lang="tr">
       <body className={inter.className}>{children}</body>
