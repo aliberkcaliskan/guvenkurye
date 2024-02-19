@@ -1,6 +1,8 @@
 import type {Metadata} from "next";
 import {Inter} from "next/font/google";
 import firebase from "./firebase";
+import {getAnalytics} from "firebase/analytics";
+
 import "./globals.css";
 const inter = Inter({subsets: ["latin"]});
 
@@ -13,6 +15,10 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
+  if (typeof window !== "undefined") {
+    const analytics = getAnalytics(firebase);
+  }
+
   return (
     <html lang="tr">
       <body className={inter.className}>{children}</body>
