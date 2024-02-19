@@ -24,7 +24,7 @@ import {getAnalytics} from "firebase/analytics";
 import firebase from "./firebase";
 export default function Home() {
   const bannerData: BannerData = {
-    title: "1Güvenilir ve Hızlı Kurye Hizmeti",
+    title: "Güvenilir ve Hızlı Kurye Hizmeti",
     description:
       "Ürünlerinizi zamanında ve güvenle taşımak için buradayız. Hizmetlerimiz, hızlı teslimat, uygun fiyatlar ve müşteri memnuniyetini ön planda tutma prensipleriyle şekillenmiştir.",
   };
