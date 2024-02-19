@@ -1,11 +1,6 @@
-import React from "react";
-import {
-  FaBus,
-  FaCar,
-  FaMedkit,
-  FaMotorcycle,
-  FaPlane
-} from "react-icons/fa";
+"use client";
+import React, {useEffect} from "react";
+import {FaBus, FaCar, FaMedkit, FaMotorcycle, FaPlane} from "react-icons/fa";
 import {
   AboutSection,
   Banner,
@@ -25,6 +20,8 @@ import {
   FeedbackData,
   WhyUsData,
 } from "./interface";
+import {getAnalytics} from "firebase/analytics";
+import firebase from "./firebase";
 export default function Home() {
   const bannerData: BannerData = {
     title: "1Güvenilir ve Hızlı Kurye Hizmeti",
@@ -152,6 +149,13 @@ export default function Home() {
       </>
     );
   };
+
+  useEffect(() => {
+    // Bu blok yalnızca tarayıcıda çalışır
+    if (typeof window !== "undefined") {
+      const analytics: any = getAnalytics(firebase);
+    }
+  }, []);
 
   return (
     <>
