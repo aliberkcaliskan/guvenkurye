@@ -12,7 +12,7 @@ const Header: React.FC = () => {
             src="/logo.webp"
             alt="logo"
             width={300}
-            height={10000}
+            height={300}
           />
         </div>
         <div className="text-white text-lg fixed bottom-0 left-0 lg:relative p-6 lg:p-0 w-full lg:w-auto max-w-lg">

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Güven Kurye, şehir içi hızlı paket teslimatı sağlayan bir kurye hizmetidir. Güvenli ve zamanında teslimatlarımızla, 1 noktadan diğer noktaya paketlerinizi güvenle ulaştırıyoruz.",
   keywords:
-    "güven kurye, hızlı teslimat, şehir içi kurye, paket teslimatı, güvenilir kurye hizmeti",
+    "güven kurye, hızlı teslimat, şehir içi kurye, paket teslimatı, güvenilir kurye hizmeti,acil kurye, güvenli kurye,",
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
