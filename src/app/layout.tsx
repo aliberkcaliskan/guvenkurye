@@ -21,6 +21,10 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 
   return (
     <html lang="tr">
+      <meta
+        name="google-site-verification"
+        content="U6GPBOtRuFeCtmxNFLLZHHgMZ0jt74VREfF1mKy5MOg"
+      />
       <body className={inter.className}>{children}</body>
     </html>
   );
