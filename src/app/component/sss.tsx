@@ -20,7 +20,7 @@ const ContactBanner: React.FC<ContactBannerProps> = ({
         </h1>
         <p className="lg:text-lg text-sm mb-5">{description}</p>
         <a
-          href="tel:531 562 51 31"
+          href="tel:0531 562 51 31"
           className="inline-block rounded-full border-2 border-white text-lg px-8 py-3 hover:bg-white hover:text-gray-900"
         >
           Bize Ulaşın

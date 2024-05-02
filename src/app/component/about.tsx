@@ -43,7 +43,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
           </h2>
           <p className="text-sm lg:text-lg">{description}</p>
           <a
-            href="tel:531 562 51 31"
+            href="tel:0531 562 51 31"
             className="mt-8 inline-block rounded-full border-2 border-gray-900 text-lg px-8 py-3 hover:bg-yellow hover:text-white"
           >
             Detaylı Bilgi

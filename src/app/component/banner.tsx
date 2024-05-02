@@ -16,7 +16,7 @@ const Banner: React.FC<BannerProps> = ({title, description}) => {
         <div className="flex gap-2">
           <a
             className="mt-5 border p-4 px-10 rounded-lg"
-            href="tel:531 562 51 31"
+            href="tel:0531 562 51 31"
           >
             Kurye Çağır
           </a>

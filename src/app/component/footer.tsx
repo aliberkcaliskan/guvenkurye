@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
       <a
         className="flex justify-center text-bold text-3xl mt-4"
-        href="tel:531 562 51 31"
+        href="tel:0531 562 51 31"
       >
         (+90) 531 562 51 31
       </a>
