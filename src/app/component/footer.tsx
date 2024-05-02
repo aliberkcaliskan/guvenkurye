@@ -14,7 +14,7 @@ const socialIcons: SocialIcon[] = [
     label: "Instagram",
   },
   {
-    href: "#",
+    href: "mailto:kuryeguvenn@gmail.com",
     path: <FaEnvelope />,
     label: "mail",
   },
