@@ -39,9 +39,8 @@ export default function Home() {
   const aboutData: AboutData = {
     title: "Hakkımızda",
     description:
-      "Biz Güven Kurye, güvenilir ve hızlı kurye hizmetleri sunan bir şirket olarak 2011'den beri faaliyet gösteriyoruz. Misyonumuz, müşterilerimize en kaliteli kurye deneyimini yaşatmak ve iş süreçlerini kolaylaştırmaktır.",
+      "Biz Güven Kurye, güvenilir ve hızlı kurye hizmetleri sunan bir şirket olarak 2011'den beri faaliyet gösteriyoruz. Misyonumuz, müşterilerimize en kaliteli kurye deneyimini yaşatmak ve iş süreçlerini kolaylaştırmaktır.  Biz Güven Kurye, güvenilir ve hızlı kurye hizmetleri sunan bir şirket olarak 2011'den beri faaliyet gösteriyoruz. Misyonumuz, müşterilerimize en kaliteli kurye deneyimini yaşatmak ve iş süreçlerini kolaylaştırmaktır.Kuruluşumuzdan beri sektörde en üstün ekspres kurye hizmeti sağlayıcısı olarak biliniriz, müşteri memnuniyeti ve kaliteli hizmet ilkemizden ödün vermeden devam ediyoruz. Alanında uzman ekibimiz sayesinde, haftanın her günü ve her saati, 7/24 en hızlı şekilde kurye hizmetlerimizi sunmaktayız. Tüm kurye hizmetlerimiz için kolay ve güvenli ödeme seçenekleri ile gönderilerinizi kısa sürede gönderim sağlarız. Tüm kurye hizmetlerimiz garanti altındadır ve hızlı teslimat konusunda güvence veriyoruz. Geniş hizmet ağımızla müşterilerimize ayrıcalıklı bir deneyim sunuyoruz. Uzman ekibimizle avantajlı bir şekilde kurye hizmeti alabilir ve gönderilerinizi hızlı bir şekilde teslim alabilirsiniz. Web sitemiz üzerinden online kurye çağırma hizmetimizden yararlanabilir ve kurye hizmetlerimizle ilgili detaylı bilgi alabilirsiniz. Kurye desteğimiz istanbul merkezli olmakla birlikte şehirler arası gönderim de sağlamaktadır. Binek, doblo, panelvan gibi geniş araç yelpazesi ve ekibimiz ile ihtiyaçlarınızı gün içerisinde karşılamak için 7/24 hizmet vermekteyiz Unutulan anahtar, paket, parça, hediye, eşya, ilaç, kargo, medikal gibi tüm gönderilerinizi götürüyoruz.",
     image: "/kargo-teslimati.webp",
-    link: "/about",
   };
 
   const feedbackData: FeedbackData = {

@@ -47,6 +47,14 @@ const PackageCard: React.FC<PackageCardProps> = ({
                 <span className="sm-text lg:text-lg">Fiyat Aralığı: {priceRange}</span>
               </li> */}
             </ul>
+            <div className="flex justify-center align-center">
+              <a
+                className="mt-2 border  border-green-500 p-4 px-10 rounded-lg text-white bg-green-500	hover:bg-white hover:text-green-500"
+                href="tel:531 562 51 31"
+              >
+              Hemen Ara
+              </a>
+            </div>
           </div>
         </div>
       </div>

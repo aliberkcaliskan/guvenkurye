@@ -14,7 +14,6 @@ export interface BannerData {
     title: string;
     description: string;
     image: string;
-    link: string;
   }
   
   export interface FeedbackData {

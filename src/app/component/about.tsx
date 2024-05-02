@@ -5,14 +5,12 @@ interface AboutSectionProps {
   title: string;
   description: string;
   image: string;
-  link: string;
 }
 
 const AboutSection: React.FC<AboutSectionProps> = ({
   title,
   description,
   image,
-  link,
 }) => {
   return (
     <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 lg:py-24 py-12 ">
@@ -38,14 +36,14 @@ const AboutSection: React.FC<AboutSectionProps> = ({
           />
         </div>
       </div>
-      <div className="lg:px-32 lg:py-32 flex items-center justify-center">
+      <div className="lg:px-4 lg:py-4 flex items-center justify-center">
         <div>
           <h2 className="text-2xl lg:text-5xl mb-3 lg:mb-6 font-bold uppercase italic">
             {title}
           </h2>
           <p className="text-sm lg:text-lg">{description}</p>
           <a
-            href={link}
+            href="tel:531 562 51 31"
             className="mt-8 inline-block rounded-full border-2 border-gray-900 text-lg px-8 py-3 hover:bg-yellow hover:text-white"
           >
             Detaylı Bilgi
