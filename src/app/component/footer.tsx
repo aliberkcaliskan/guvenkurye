@@ -19,7 +19,7 @@ const socialIcons: SocialIcon[] = [
     label: "mail",
   },
   {
-    href: "#",
+    href: "https://twitter.com/KuryeGuven",
     path: <FaTwitter />,
     label: "Twitter",
   },
