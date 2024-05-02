@@ -13,7 +13,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
   image,
 }) => {
   return (
-    <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 lg:py-24 py-12 ">
+    <div id="about" className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 lg:py-24 py-12 ">
       <div className="hidden lg:grid relative grid-cols-2">
         <div className="pt-24">
           <div className="relative w-full h-full">
