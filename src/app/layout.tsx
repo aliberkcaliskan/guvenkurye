@@ -4,6 +4,7 @@ import firebase from "./firebase";
 import {getAnalytics} from "firebase/analytics";
 
 import "./globals.css";
+import Head from "next/head";
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
@@ -25,6 +26,19 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         name="google-site-verification"
         content="U6GPBOtRuFeCtmxNFLLZHHgMZ0jt74VREfF1mKy5MOg"
       />
+       <Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H89WXZQ976"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-H89WXZQ976');
+            `,
+          }}
+        />
+      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   );
