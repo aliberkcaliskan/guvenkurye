@@ -22,7 +22,27 @@ import {
 } from "./interface";
 import {getAnalytics} from "firebase/analytics";
 import firebase from "./firebase";
+import {useRouter} from "next/navigation";
 export default function Home() {
+  const router: any = useRouter();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const analytics = getAnalytics(firebase);
+    }
+
+    const handleRouteChange = (url: string) => {
+      window?.gtag("config", "G-H89WXZQ976", {
+        page_path: url,
+      });
+    };
+
+    router?.events?.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router?.events?.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   const bannerData: BannerData = {
     title: "Güvenilir ve Hızlı Kurye Hizmeti",
     description:
