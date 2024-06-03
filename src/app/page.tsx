@@ -34,6 +34,10 @@ export default function Home() {
           windows.gtag("config", "G-H89WXZQ976", {
             page_path: url,
           });
+          windows.gtag("event", "conversion", {
+            send_to: "AW-16465641248/XN33CKTcsa0ZEKD-tqs9",
+          });
+
         }
       };
 
